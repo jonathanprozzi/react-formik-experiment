@@ -1,9 +1,9 @@
 import React from "react";
 
-const FormOutputDebug = ({ formValues, space }) => {
+const FormOutputDebug = ({ data, space }) => {
   return (
     <div>
-      <pre>{JSON.stringify(formValues, null, space)}</pre>
+      <pre>{JSON.stringify(data, null, space)}</pre>
     </div>
   );
 };
