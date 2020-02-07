@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormOutputDebug from "./FormOutputDebug";
+import VisualDataDebug from "./VisualDataDebug";
 import { Formik } from "formik";
 
 const BasicForm = () => {
@@ -65,7 +65,6 @@ const BasicForm = () => {
                 />
                 {errors.password && touched.password && errors.password}
                 <button type="submit" disabled={isSubmitting}>
-                  {" "}
                   Send it over!
                 </button>
               </form>

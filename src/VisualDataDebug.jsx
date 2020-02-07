@@ -1,6 +1,6 @@
 import React from "react";
 
-const FormOutputDebug = ({ data, space }) => {
+const VisualDataDebug = ({ data, space }) => {
   return (
     <div>
       <pre>{JSON.stringify(data, null, space)}</pre>
@@ -8,4 +8,4 @@ const FormOutputDebug = ({ data, space }) => {
   );
 };
 
-export default FormOutputDebug;
+export default VisualDataDebug;
