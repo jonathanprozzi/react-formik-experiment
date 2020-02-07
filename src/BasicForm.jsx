@@ -24,7 +24,7 @@ const BasicForm = () => {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                console.log(JSON.stringify(values, null, 2));
+                //setting state so that it can be surfaced from inside Formik
                 setFormValues(values);
                 setSubmitting(false);
               }, 500);
@@ -75,7 +75,7 @@ const BasicForm = () => {
       </div>
       <div>
         Initial Values
-        <FormOutputDebug formValues={formValues}></FormOutputDebug>
+        <FormOutputDebug formValues={formValues} space={0}></FormOutputDebug>
       </div>
     </>
   );
