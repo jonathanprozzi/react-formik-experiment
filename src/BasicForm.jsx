@@ -74,7 +74,7 @@ const BasicForm = () => {
       </div>
       <div>
         Initial Values
-        <FormOutputDebug data={formValues} space={0}></FormOutputDebug>
+        <VisualDataDebug data={formValues} space={0}></VisualDataDebug>
       </div>
     </>
   );
